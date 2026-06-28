@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberTown Master Engine</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-950 text-white min-h-screen pb-20">
+
+<div class="bg-slate-900 p-4 border-b border-violet-800 sticky top-0 z-10 flex justify-between items-center">
+    <div>
+        <h1 class="font-black text-violet-400">CYBER-CITY</h1>
+        <p class="text-[10px] text-slate-400">Nível <span id="lvl-display">1</span> | XP: <span id="xp-display">0</span></p>
+    </div>
+    <div class="text-right font-bold text-orange-400">π <span id="pi-display">10.00</span></div>
+</div>
+
+<div id="game-view" class="p-4 space-y-3"></div>
+
+<div class="fixed bottom-0 w-full bg-slate-900 border-t border-slate-700 flex justify-around p-3">
+    <button onclick="renderizar('fazenda')" class="text-xs">🌾 Fazenda</button>
+    <button onclick="renderizar('fabrica')" class="text-xs">🏭 Fábrica</button>
+    <button onclick="renderizar('logistica')" class="text-xs text-blue-400">🚁 Logística
+      
